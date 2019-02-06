@@ -28,7 +28,11 @@ public class ScriptLogger {
     public static void logScriptConfiguration(Configuration configuration,
                                               String scriptType, String script) {
 
-        LOG.info("Running: " + scriptType + " located in: " + getScriptPath(script, scriptType));
+        LOG.info("*U*UUUUUUUUUUUUUUUUUUU************U*UUUUUUUUUUUUUUUUUUU*********" +
+                "***U*UUUUUUUUUUUUUUUUUUU************U*UUUUUUUUUUUUUUUUUUU************U*UUUUUUUU" +
+                "UUUUUUUUUUU********" +
+                "****U*UUUUUUUUUUUUUUUUUUU************U*UUUUUUUUUUUUUUUUUUU************U*UUUUUUUU" +
+                "UUUUUUUUUUU***********Running: " + scriptType + " located in: " + getScriptPath(script, scriptType));
         LOG.debug("*********************** configuration information ***********************");
         LOG.debug("<scriptType>:" + "<" + scriptType + ">");
         LOG.debug("<scriptName>: " + getScriptPath(script, scriptType));
